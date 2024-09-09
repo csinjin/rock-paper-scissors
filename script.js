@@ -55,7 +55,17 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
+function playGame() {
+    let rounds = 0
+
+    while (rounds < 5) {
+        playRound(getHumanChoice(), getComputerChoice())
+        rounds++
+    }
+}
+
 let humanScore = 0
 let computerScore = 0
 
-playRound(getHumanChoice(), getComputerChoice())
+playGame()
+console.log("Your Score: " + humanScore + "\nComputer Score: " + computerScore)
