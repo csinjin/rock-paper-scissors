@@ -1,4 +1,4 @@
-function getComputer(){
+function getComputerChoice(){
     let randomNumber = Math.floor(Math.random() * 3);
 
     if (randomNumber === 0){
@@ -15,4 +15,4 @@ function getComputer(){
     }
 }
 
-getComputer()
+getComputerChoice()
